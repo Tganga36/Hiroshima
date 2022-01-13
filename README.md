@@ -14,7 +14,7 @@ $ cd Hiroshima
 
 $ pip install requests
 
-$ python3 Hiroshima.py
+$ python3 Hiroshima.py 09.......
 
 # How use (Windows)
 
@@ -22,6 +22,6 @@ $ first Download Pack
 
 $ cd Hiroshima 
 
-$ python3 Hiroshima.py
+$ python3 Hiroshima.py 09.......
 
 * LOKI303 => mrhack125
