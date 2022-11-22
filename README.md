@@ -24,4 +24,4 @@ $ cd Hiroshima
 
 $ python3 Hiroshima.py 09.......
 
-* LOKI303 => mrhack125
+* Tganga36
