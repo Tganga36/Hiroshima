@@ -8,7 +8,7 @@
 
 # How use (Linux)
 
-$ git clone https://github.com/mrhack125/Hiroshima
+$ git clone https://github.com/Tganga36/Hiroshima
 
 $ cd Hiroshima
 
